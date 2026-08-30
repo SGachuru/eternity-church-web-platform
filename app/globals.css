@@ -1,26 +1,98 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg: #f4efe9;
+  --panel: #faf7f1;
+  --ink: #1d1b1a;
+  --muted: #5b524d;
+  --line: rgba(29, 27, 26, 0.12);
+  --brand: #b97036;
+  --deep: #1b1d1f;
+  --soft: #efe9df;
+  --shadow: 0 24px 48px rgba(18, 14, 12, 0.12);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-background: var(--bg);
+  --color-foreground: var(--ink);
+  --font-sans: var(--font-body);
+  --font-display: var(--font-display);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body), Arial, sans-serif;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display), Georgia, serif;
+  letter-spacing: -0.04em;
+}
+
+.site-shell {
+  background:
+    radial-gradient(circle at top left, rgba(185, 112, 54, 0.08), transparent 32%),
+    linear-gradient(180deg, #f8f3ee 0%, #f4efe9 100%);
+}
+
+.soft-card {
+  background: rgba(255, 255, 255, 0.56);
+  border: 1px solid rgba(29, 27, 26, 0.08);
+  box-shadow: 0 12px 30px rgba(29, 27, 26, 0.05);
+}
+
+.section-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.section-label span:first-child {
+  display: inline-flex;
+  height: 1.8rem;
+  width: 1.8rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  background: rgba(185, 112, 54, 0.12);
+  color: var(--brand);
+}
+
+.brand-mark {
+  display: inline-flex;
+  height: 2.5rem;
+  width: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.75rem;
+  background: linear-gradient(135deg, #d29f5a 0%, #a86331 100%);
+  color: white;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.sidebar-panel {
+  backdrop-filter: blur(10px);
+}
+
+@media (max-width: 767px) {
+  .mobile-menu-open {
+    overflow: hidden;
+  }
 }
