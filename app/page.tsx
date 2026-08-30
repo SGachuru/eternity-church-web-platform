@@ -12,7 +12,7 @@ const featureCards = [
     index: "02",
     title: "Watch online",
     description: "Find encouragement through teaching and messages from wherever you are.",
-    href: "/sermons",
+    href: "https://www.youtube.com/@eternitygospelchurchministries",
   },
   {
     index: "03",
@@ -90,9 +90,14 @@ export default function HomePage() {
             <Link href="/visit" className="rounded-full bg-[#b97036] px-5 py-3 text-sm font-semibold text-white transition hover:bg-[#a9622d]">
               Plan your visit ↗
             </Link>
-            <Link href="/sermons" className="text-sm font-semibold text-white underline decoration-white/50 underline-offset-4">
+            <a
+              href="https://www.youtube.com/@eternitygospelchurchministries"
+              target="_blank"
+              rel="noreferrer"
+              className="text-sm font-semibold text-white underline decoration-white/50 underline-offset-4"
+            >
               Watch online
-            </Link>
+            </a>
           </div>
         </div>
       </section>
@@ -367,12 +372,14 @@ export default function HomePage() {
             <span>•</span>
             <span>YouTube</span>
           </div>
-          <Link
-            href="/sermons"
+          <a
+            href="https://www.youtube.com/@eternitygospelchurchministries"
+            target="_blank"
+            rel="noreferrer"
             className="mt-8 inline-flex w-fit rounded-full bg-white px-5 py-3 text-sm font-semibold text-stone-900 transition hover:bg-stone-200"
           >
             Watch message ↗
-          </Link>
+          </a>
         </div>
       </section>
 

@@ -24,9 +24,9 @@ const legalItems = [
 ];
 
 const socialLinks = [
-  { label: "Facebook", href: "https://www.facebook.com/", image: "/eternity%20facebook%20qr.png" },
-  { label: "Instagram", href: "https://www.instagram.com/", image: "/eternity%20insatgram%20qr.png" },
-  { label: "YouTube", href: "https://www.youtube.com/", image: "/eternity%20youtube%20qr.png" },
+  { label: "Facebook", href: "https://www.facebook.com/eternitygospelchurch", image: "/eternity%20facebook%20qr.png" },
+  { label: "Instagram", href: "https://www.instagram.com/eternitygospelchurch/", image: "/eternity%20insatgram%20qr.png" },
+  { label: "YouTube", href: "https://www.youtube.com/@eternitygospelchurchministries", image: "/eternity%20youtube%20qr.png" },
 ];
 
 export function SiteShell({ children }: { children: React.ReactNode }) {

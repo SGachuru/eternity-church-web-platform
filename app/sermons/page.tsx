@@ -19,14 +19,20 @@ export default function SermonsPage() {
 
       <section className="mt-16 grid gap-5 md:grid-cols-2">
         {sermons.map((sermon) => (
-          <article key={sermon.title} className="soft-card rounded-[1.5rem] p-6">
+          <a
+            key={sermon.title}
+            href="https://www.youtube.com/@eternitygospelchurchministries"
+            target="_blank"
+            rel="noreferrer"
+            className="soft-card block rounded-[1.5rem] p-6 transition hover:-translate-y-0.5 hover:shadow-[0_20px_30px_rgba(28,20,16,0.08)]"
+          >
             <div className="text-xs font-semibold uppercase tracking-[0.2em] text-[#b97036]">{sermon.series}</div>
             <h3 className="mt-4 text-3xl text-stone-900">{sermon.title}</h3>
             <div className="mt-4 flex items-center justify-between text-sm text-stone-600">
               <span>{sermon.length}</span>
               <span>Watch now</span>
             </div>
-          </article>
+          </a>
         ))}
       </section>
 
