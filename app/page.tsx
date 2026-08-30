@@ -305,8 +305,8 @@ export default function HomePage() {
           </div>
           <div className="overflow-hidden rounded-[1.5rem] border border-white/10 bg-stone-900 shadow-[0_20px_40px_rgba(0,0,0,0.25)]">
             <iframe
-              title="Eternity Gospel Church location in Karen, Nairobi"
-              src="https://www.google.com/maps?q=Karen%2C%20Nairobi&z=13&output=embed"
+              title="Eternity Gospel Church location"
+              src="https://www.google.com/maps?q=Eternity+Gospel+Church+and+Ministries+Karen+Nairobi&z=16&output=embed"
               className="h-[320px] w-full border-0"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
@@ -314,7 +314,7 @@ export default function HomePage() {
             <div className="flex items-center justify-between gap-4 border-t border-white/10 bg-stone-950/80 px-4 py-3 text-sm text-white/80">
               <span>Map and directions</span>
               <a
-                href="https://www.google.com/maps/search/?api=1&query=Karen%2C%20Nairobi"
+                href="https://maps.app.goo.gl/UP3ha3xDkjWA3oj88"
                 target="_blank"
                 rel="noreferrer"
                 className="font-semibold text-[#e6b57d] underline-offset-4 hover:underline"

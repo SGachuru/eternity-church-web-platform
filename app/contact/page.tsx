@@ -34,7 +34,7 @@ export default function ContactPage() {
         <div className="soft-card overflow-hidden rounded-[1.5rem] p-0">
           <iframe
             title="Eternity Gospel Church map"
-            src="https://www.google.com/maps?q=Karen%2C%20Nairobi&z=13&output=embed"
+            src="https://www.google.com/maps?q=Eternity+Gospel+Church+and+Ministries+Karen+Nairobi&z=16&output=embed"
             className="h-[310px] w-full border-0"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
