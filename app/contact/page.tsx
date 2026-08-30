@@ -31,16 +31,14 @@ export default function ContactPage() {
           </div>
         </div>
 
-        <div className="soft-card rounded-[1.5rem] p-6">
-          <h2 className="text-3xl text-stone-900">Send a message</h2>
-          <form className="mt-6 space-y-4">
-            <input className="w-full rounded-full border border-stone-300 bg-white px-4 py-3 outline-none" placeholder="Your name" />
-            <input className="w-full rounded-full border border-stone-300 bg-white px-4 py-3 outline-none" placeholder="Email address" />
-            <textarea className="min-h-32 w-full rounded-[1.25rem] border border-stone-300 bg-white px-4 py-3 outline-none" placeholder="Your message" />
-            <button type="button" className="inline-flex rounded-full bg-stone-900 px-5 py-3 text-sm font-semibold text-white">
-              Send message
-            </button>
-          </form>
+        <div className="soft-card overflow-hidden rounded-[1.5rem] p-0">
+          <iframe
+            title="Eternity Gospel Church map"
+            src="https://www.google.com/maps?q=Karen%2C%20Nairobi&z=13&output=embed"
+            className="h-[310px] w-full border-0"
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          />
         </div>
       </section>
 
