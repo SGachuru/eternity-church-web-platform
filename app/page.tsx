@@ -61,55 +61,38 @@ const eventRows = [
 export default function HomePage() {
   return (
     <SiteShell>
-      <section className="grid gap-8 overflow-hidden rounded-[2rem] border border-stone-200/80 bg-white/70 px-5 py-8 shadow-[0_20px_40px_rgba(28,20,16,0.06)] sm:px-8 lg:grid-cols-[1.2fr_0.8fr] lg:px-10 lg:py-12">
-        <div className="flex flex-col justify-center">
-          <p className="section-label mb-4"><span>01</span><span>Welcome</span></p>
-          <h1 className="max-w-xl text-5xl leading-none text-stone-900 sm:text-6xl">
-            There is a place <span className="italic text-[#b97036]">for you.</span>
+      <section className="hero-photo relative isolate -mx-5 min-h-[620px] overflow-hidden px-6 py-10 text-white shadow-[0_20px_40px_rgba(28,20,16,0.18)] sm:-mx-8 sm:px-10 lg:-mx-10 lg:min-h-[720px] lg:px-16 lg:py-16">
+        <div className="absolute inset-0 -z-10 bg-[linear-gradient(90deg,rgba(8,12,18,0.88),rgba(8,12,18,0.55)_48%,rgba(8,12,18,0.18))]" />
+        <div className="relative flex min-h-[540px] max-w-3xl flex-col justify-center lg:min-h-[588px]">
+          <p className="section-label text-white/75"><span className="bg-white/15 text-white">01</span><span>Welcome to Eternity Gospel Church</span></p>
+          <h1 className="mt-6 max-w-2xl text-5xl leading-[0.95] text-white sm:text-7xl lg:text-8xl">
+            Join us for <span className="italic text-[#f0bd78]">worship.</span>
           </h1>
-          <p className="mt-5 max-w-xl text-lg text-stone-700">
-            An autonomous Pentecostal and Evangelistic Ministry founded on the
-            Rock, Jesus Christ. We teach the Word, seek God in prayer, and touch
-            the world with the Love of Christ.
+          <p className="mt-6 max-w-xl text-lg text-white/85 sm:text-xl">
+            Eternity Gospel Church and Ministries, Karen Nairobi Kenya. Come as
+            you are for biblical teaching, prayer, and a welcoming community.
           </p>
 
-          <div className="mt-6 grid gap-3 sm:grid-cols-2">
-            <div className="soft-card rounded-[1.25rem] p-4">
-              <div className="text-[10px] font-semibold uppercase tracking-[0.2em] text-stone-500">Service times</div>
-              <div className="mt-2 text-lg font-semibold text-stone-900">Sunday · 9:00 AM</div>
-              <div className="text-sm text-stone-600">Prayer &amp; worship</div>
+          <div className="mt-8 grid max-w-2xl gap-4 sm:grid-cols-2">
+            <div className="rounded-[1rem] border border-white/20 bg-black/25 p-5 backdrop-blur-sm">
+              <div className="text-xs font-semibold uppercase tracking-[0.2em] text-[#f0bd78]">Sunday service</div>
+              <div className="mt-2 text-2xl font-semibold text-white">8:00 AM – 1:00 PM</div>
+              <div className="mt-1 text-sm text-white/70">Worship, discipleship, and teaching</div>
             </div>
-            <div className="soft-card rounded-[1.25rem] p-4">
-              <div className="text-[10px] font-semibold uppercase tracking-[0.2em] text-stone-500">Location</div>
-              <div className="mt-2 text-lg font-semibold text-stone-900">Karen, Nairobi</div>
-              <div className="text-sm text-stone-600">Come as you are</div>
+            <div className="rounded-[1rem] border border-white/20 bg-black/25 p-5 backdrop-blur-sm">
+              <div className="text-xs font-semibold uppercase tracking-[0.2em] text-[#f0bd78]">Hosts</div>
+              <div className="mt-2 text-2xl font-semibold text-white">Bishop Charles &amp; Rev Miriam</div>
+              <div className="mt-1 text-sm text-white/70">Touching lives with the eternal love of God</div>
             </div>
           </div>
 
           <div className="mt-8 flex flex-wrap items-center gap-4">
-            <Link
-              href="#connect"
-              className="rounded-full bg-stone-900 px-5 py-3 text-sm font-semibold text-white transition hover:bg-stone-700"
-            >
-              Find your next step →
+            <Link href="/visit" className="rounded-full bg-[#b97036] px-5 py-3 text-sm font-semibold text-white transition hover:bg-[#a9622d]">
+              Plan your visit ↗
             </Link>
-            <Link
-              href="/sermons"
-              className="text-sm font-semibold text-stone-800 underline decoration-stone-400 underline-offset-4"
-            >
-              Watch online ↗
+            <Link href="/sermons" className="text-sm font-semibold text-white underline decoration-white/50 underline-offset-4">
+              Watch online
             </Link>
-          </div>
-        </div>
-
-        <div className="hero-photo relative min-h-[320px] overflow-hidden rounded-[1.75rem] border border-stone-200 p-6">
-          <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(255,255,255,0.12),transparent_40%,rgba(0,0,0,0.18))]" />
-          <div className="relative flex h-full items-end">
-            <div className="rounded-full border border-white/20 bg-white/10 px-4 py-3 text-sm text-white backdrop-blur-sm">
-              <span className="inline-block h-2.5 w-2.5 rounded-full bg-emerald-400 align-middle" />
-              <span className="ml-2">Sunday worship</span>
-              <div className="mt-1 font-semibold">Join us in Karen</div>
-            </div>
           </div>
         </div>
       </section>
@@ -273,7 +256,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="mt-20 rounded-[2rem] border border-stone-200 bg-white/70 p-6 md:p-8">
+      <section className="mt-20 border-y border-stone-200/80 py-10 md:py-12">
         <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
           <div>
             <p className="section-label"><span>06</span><span>Announcements</span></p>
@@ -310,7 +293,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="mt-20 rounded-[2rem] border border-stone-200 bg-stone-950 p-6 text-white md:p-8">
+      <section className="mt-20 bg-stone-950 px-6 py-10 text-white md:px-8 md:py-12">
         <div className="grid gap-8 lg:grid-cols-[1fr_0.9fr] lg:items-center">
           <div>
             <p className="section-label text-white"><span className="bg-white/10 text-white">08</span><span>Location</span></p>
@@ -328,7 +311,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="mt-20 rounded-[2rem] border border-stone-200 bg-white/70 p-6 md:p-8">
+      <section className="mt-20 border-y border-stone-200/80 py-10 md:py-12">
         <div className="grid gap-8 lg:grid-cols-[1fr_0.9fr] lg:items-center">
           <div>
             <p className="section-label"><span>09</span><span>Newsletter</span></p>
@@ -348,7 +331,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="mt-20 grid gap-8 rounded-[2rem] border border-stone-200 bg-stone-950 p-5 text-white shadow-[0_20px_36px_rgba(27,28,31,0.12)] md:grid-cols-[0.9fr_1.1fr] md:p-8">
+      <section className="mt-20 grid gap-8 bg-stone-950 p-5 text-white shadow-[0_20px_36px_rgba(27,28,31,0.12)] md:grid-cols-[0.9fr_1.1fr] md:p-8">
         <div className="flex min-h-[260px] items-center justify-center rounded-[1.5rem] border border-white/10 bg-[radial-gradient(circle_at_center,#e0b277_0%,#7d4623_35%,#171b1d_100%)]">
           <div className="flex h-20 w-20 items-center justify-center rounded-full border border-white/30 bg-white/10 text-2xl">▶</div>
         </div>
@@ -379,7 +362,7 @@ export default function HomePage() {
       </section>
 
       <section className="mt-20" id="visit">
-        <div className="grid gap-8 rounded-[2rem] border border-stone-200 bg-white/80 p-6 md:grid-cols-2 md:p-8">
+        <div className="grid gap-8 border-y border-stone-200/80 py-10 md:grid-cols-2 md:py-12">
           <div>
             <p className="section-label"><span>07</span><span>Your first Sunday</span></p>
             <h2 className="mt-5 text-4xl text-stone-900 sm:text-5xl">
@@ -418,7 +401,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="mt-20 rounded-[2rem] border border-stone-200 bg-[#b97036] p-6 text-white md:flex md:items-center md:justify-between md:p-8">
+      <section className="mt-20 bg-[#b97036] px-6 py-10 text-white md:flex md:items-center md:justify-between md:px-8 md:py-12">
         <div>
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-white/80">
             The Love of Christ in action
