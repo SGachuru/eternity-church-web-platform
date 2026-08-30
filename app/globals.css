@@ -44,6 +44,15 @@ h4 {
     linear-gradient(180deg, #f8f3ee 0%, #f4efe9 100%);
 }
 
+.hero-photo {
+  background-image:
+    linear-gradient(135deg, rgba(11, 15, 18, 0.22), rgba(11, 15, 18, 0.46)),
+    url("/church-background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .soft-card {
   background: rgba(255, 255, 255, 0.56);
   border: 1px solid rgba(29, 27, 26, 0.08);

@@ -102,8 +102,8 @@ export default function HomePage() {
           </div>
         </div>
 
-        <div className="relative min-h-[320px] overflow-hidden rounded-[1.75rem] border border-stone-200 bg-[radial-gradient(circle_at_top,#c58954_0%,#8a4d2f_32%,#1e2124_100%)] p-6">
-          <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(255,255,255,0.18),transparent_40%,rgba(0,0,0,0.2))]" />
+        <div className="hero-photo relative min-h-[320px] overflow-hidden rounded-[1.75rem] border border-stone-200 p-6">
+          <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(255,255,255,0.12),transparent_40%,rgba(0,0,0,0.18))]" />
           <div className="relative flex h-full items-end">
             <div className="rounded-full border border-white/20 bg-white/10 px-4 py-3 text-sm text-white backdrop-blur-sm">
               <span className="inline-block h-2.5 w-2.5 rounded-full bg-emerald-400 align-middle" />

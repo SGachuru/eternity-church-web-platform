@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import Link from "next/link";
 
 const navItems = [
@@ -20,11 +23,18 @@ const legalItems = [
 ];
 
 export function SiteShell({ children }: { children: React.ReactNode }) {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div className="site-shell min-h-screen text-stone-900">
-      <div className="mx-auto max-w-[1500px] px-4 py-6 lg:px-8">
-        <div className="overflow-hidden rounded-[2rem] border border-stone-200/80 bg-white/70 shadow-[0_25px_60px_rgba(27,20,16,0.08)] backdrop-blur-sm lg:flex">
-          <aside className="w-full border-b border-stone-200 bg-stone-950 p-5 text-white lg:w-[300px] lg:border-b-0 lg:border-r">
+      <div className="mx-auto w-full">
+        <div className="overflow-hidden bg-transparent lg:flex lg:min-h-screen">
+          <aside
+            className={[
+              "w-full bg-stone-950 p-5 text-white transition-all duration-300 ease-out lg:sticky lg:top-0 lg:flex lg:h-screen lg:w-[300px] lg:flex-col lg:justify-between lg:border-r lg:border-stone-800",
+              isOpen ? "block translate-x-0 opacity-100" : "hidden translate-x-[-12px] opacity-0 lg:block lg:translate-x-0 lg:opacity-100",
+            ].join(" ")}
+          >
             <div className="flex items-center justify-between gap-3">
               <Link href="/" className="flex items-center gap-3">
                 <span className="brand-mark">EGC</span>
@@ -38,17 +48,20 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
 
               <button
                 type="button"
+                aria-label={isOpen ? "Close navigation" : "Open navigation"}
+                onClick={() => setIsOpen(!isOpen)}
                 className="inline-flex rounded-full border border-white/20 px-3 py-2 text-[10px] font-semibold uppercase tracking-[0.18em] text-white lg:hidden"
               >
-                Explore
+                {isOpen ? "Close" : "Explore"}
               </button>
             </div>
 
-            <nav className="mt-8 space-y-2">
+            <nav className="mt-8 space-y-2 lg:overflow-y-auto lg:pr-1">
               {navItems.map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
+                  onClick={() => setIsOpen(false)}
                   className="flex items-center justify-between rounded-full border border-transparent px-3 py-2 text-sm font-medium text-white/75 transition hover:border-white/10 hover:bg-white/5 hover:text-white"
                 >
                   <span>{item.label}</span>
@@ -57,7 +70,7 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
               ))}
             </nav>
 
-            <div className="mt-8 border-t border-white/10 pt-6">
+            <div className="mt-8 border-t border-white/10 pt-6 lg:pb-4">
               <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-white/55">
                 Legal &amp; access
               </p>
@@ -74,7 +87,7 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
           </aside>
 
           <div className="flex-1 bg-transparent">
-            <header className="border-b border-stone-200/80 bg-white/40 px-5 py-4 backdrop-blur-sm lg:hidden">
+            <header className="bg-white/30 px-5 py-4 backdrop-blur-sm lg:hidden">
               <div className="flex items-center justify-between gap-3">
                 <Link href="/" className="flex items-center gap-3">
                   <span className="brand-mark">EGC</span>
@@ -85,8 +98,13 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
                     </div>
                   </div>
                 </Link>
-                <button type="button" className="rounded-full border border-stone-300 px-3 py-2 text-[10px] font-semibold uppercase tracking-[0.18em] text-stone-800">
-                  Explore
+                <button
+                  type="button"
+                  aria-label={isOpen ? "Close navigation" : "Open navigation"}
+                  onClick={() => setIsOpen(!isOpen)}
+                  className="rounded-full border border-stone-300 px-3 py-2 text-[10px] font-semibold uppercase tracking-[0.18em] text-stone-800"
+                >
+                  {isOpen ? "Close" : "Explore"}
                 </button>
               </div>
             </header>
