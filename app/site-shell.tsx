@@ -6,13 +6,17 @@ import Image from "next/image";
 
 const navItems = [
   { href: "/", label: "Home" },
-  { href: "/about", label: "About" },
+  { href: "/about", label: "About the Church" },
   { href: "/ministries", label: "Ministries" },
+  { href: "/leadership", label: "Pastors & Leadership" },
   { href: "/sermons", label: "Sermons" },
   { href: "/events", label: "Events" },
-  { href: "/giving", label: "Give" },
-  { href: "/prayer", label: "Prayer" },
+  { href: "/livestream", label: "Livestream" },
+  { href: "/prayer", label: "Prayer Requests" },
+  { href: "/giving", label: "Giving / Donations" },
   { href: "/contact", label: "Contact" },
+  { href: "/locations", label: "Locations" },
+  { href: "/news", label: "News & Announcements" },
   { href: "/visit", label: "Plan Your Visit" },
   { href: "/login", label: "Member Login" },
 ];
@@ -46,7 +50,7 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
         <header className="sticky top-0 z-50 bg-stone-950/95 text-white shadow-lg shadow-stone-950/20 backdrop-blur-sm">
           <div className="relative mx-auto flex min-h-16 max-w-[1600px] items-center justify-between gap-5 px-5 py-3 sm:px-8 lg:px-10">
             <Link href="/" className="flex shrink-0 items-center gap-3" onClick={() => setIsOpen(false)}>
-              <span className="brand-mark">EGC</span>
+              <Image src="/church%20logo.JPG" alt="Eternity Gospel Church logo" width={56} height={56} className="brand-logo" />
               <div>
                 <div className="text-sm font-semibold tracking-[0.02em]">Eternity Gospel</div>
                 <div className="text-[10px] uppercase tracking-[0.18em] text-white/70">
@@ -138,7 +142,7 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
 
             <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
             <div className="flex items-center gap-3">
-              <span className="brand-mark">EGC</span>
+              <Image src="/church%20logo.JPG" alt="Eternity Gospel Church logo" width={56} height={56} className="brand-logo brand-logo-footer" />
               <div>
                 <div className="text-sm font-semibold">Eternity Gospel</div>
                 <div className="text-[10px] uppercase tracking-[0.18em] text-white/70">
