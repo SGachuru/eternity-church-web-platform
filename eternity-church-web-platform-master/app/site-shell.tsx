@@ -72,7 +72,7 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
                   About
                   <span aria-hidden="true" className="text-[10px] transition group-open:rotate-180">⌄</span>
                 </button>
-                <div className="invisible absolute left-0 top-full z-10 mt-2 min-w-48 rounded-xl border border-white/10 bg-stone-950 p-2 opacity-0 shadow-2xl transition-[opacity,visibility] duration-150 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
+                <div className="invisible absolute left-0 top-full z-10 min-w-48 rounded-xl border border-white/10 bg-stone-950 p-2 opacity-0 shadow-2xl transition-[opacity,visibility] duration-150 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
                   {aboutItems.map((item) => (
                     <Link
                       key={item.href}
