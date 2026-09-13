@@ -62,13 +62,17 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
               </div>
             </Link>
 
-            <nav className="hidden min-w-0 items-center gap-1 overflow-x-auto lg:flex">
-              <details className="group relative">
-                <summary className="flex cursor-pointer list-none items-center gap-1 whitespace-nowrap rounded-full px-3 py-2 text-sm font-medium text-white/75 transition hover:bg-white/10 hover:text-white [&::-webkit-details-marker]:hidden">
+            <nav className="hidden min-w-0 items-center gap-1 overflow-visible lg:flex">
+              <div className="group relative">
+                <button
+                  type="button"
+                  aria-haspopup="true"
+                  className="flex cursor-pointer items-center gap-1 whitespace-nowrap rounded-full px-3 py-2 text-sm font-medium text-white/75 transition hover:bg-white/10 hover:text-white"
+                >
                   About
                   <span aria-hidden="true" className="text-[10px] transition group-open:rotate-180">⌄</span>
-                </summary>
-                <div className="absolute left-0 top-full z-10 mt-2 min-w-48 rounded-xl border border-white/10 bg-stone-950 p-2 shadow-2xl">
+                </button>
+                <div className="invisible absolute left-0 top-full z-10 mt-2 min-w-48 rounded-xl border border-white/10 bg-stone-950 p-2 opacity-0 shadow-2xl transition-[opacity,visibility] duration-150 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
                   {aboutItems.map((item) => (
                     <Link
                       key={item.href}
@@ -79,7 +83,7 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
                     </Link>
                   ))}
                 </div>
-              </details>
+              </div>
               {navItems.map((item) => (
                 <Link
                   key={item.href}
