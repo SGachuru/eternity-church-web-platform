@@ -4,7 +4,7 @@ import { SiteShell } from "../site-shell";
 export default function AboutPage() {
   return (
     <SiteShell>
-      <section className="rounded-[2rem] border border-stone-200 bg-white/70 p-6 shadow-[0_20px_40px_rgba(28,20,16,0.06)] md:p-8">
+      <section id="vision" className="rounded-[2rem] border border-stone-200 bg-white/70 p-6 shadow-[0_20px_40px_rgba(28,20,16,0.06)] md:p-8">
         <p className="section-label"><span>01</span><span>Our story</span></p>
         <div className="mt-6 grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
           <h1 className="text-4xl text-stone-900 sm:text-5xl">
@@ -24,7 +24,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="mt-16">
+      <section id="core-values" className="mt-16">
         <div className="grid gap-5 md:grid-cols-3">
           {[
             ["Christ-centered", "Our preaching, worship, and community life are rooted in the person and work of Jesus Christ."],
@@ -40,7 +40,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="mt-16 rounded-[2rem] border border-stone-200 bg-stone-950 p-6 text-white md:p-8">
+      <section id="mission" className="mt-16 rounded-[2rem] border border-stone-200 bg-stone-950 p-6 text-white md:p-8">
         <p className="section-label text-white"><span className="bg-white/10 text-white">03</span><span>Mission</span></p>
         <div className="mt-6 grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
           <h2 className="text-4xl sm:text-5xl">Gathering people <span className="italic text-[#e6b57d]">to grow in faith.</span></h2>
