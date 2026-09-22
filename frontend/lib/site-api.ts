@@ -29,7 +29,8 @@ export async function getSiteConfig(): Promise<SiteConfig> {
 
   try {
     const response = await fetch(`${apiBaseUrl}/api/site`, {
-      cache: "no-store",
+      cache: "force-cache",
+      next: { revalidate: 300 },
       headers: {
         Accept: "application/json",
       },

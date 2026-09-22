@@ -58,7 +58,15 @@ export default function HomePage() {
 
           <div className="hero-panel">
             <div className="hero-image-frame">
-              <Image src="/bishop%20charles%20and%20rev.%20miriam.JPG" alt="Bishop Charles and Rev Miriam" width={640} height={620} className="hero-image" />
+              <Image
+                src="/bishop%20charles%20and%20rev.%20miriam.JPG"
+                alt="Bishop Charles and Rev Miriam"
+                width={640}
+                height={620}
+                priority
+                sizes="(max-width: 768px) 100vw, 46vw"
+                className="hero-image"
+              />
             </div>
             <div className="hero-host-card">
               <div>
