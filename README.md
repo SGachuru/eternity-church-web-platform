@@ -1,11 +1,11 @@
-This project now follows a clean frontend/backend split:
+This project now runs as a small monorepo with separate frontend and backend services.
 
-- Frontend: the Next.js site in the root app directory
-- Backend: API services under the `backend/` folder
+- Frontend: [frontend](frontend)
+- Backend: [backend](backend)
 
 ## Getting Started
 
-Run both services together:
+Run both together from the project root:
 
 ```bash
 npm run dev
@@ -23,19 +23,15 @@ npm run dev:frontend
 npm run dev:backend
 ```
 
-## Backend endpoints
-
-The backend includes a health check and site metadata route:
-
-- http://localhost:4000/api/health
-- http://localhost:4000/api/site
-
-## Frontend
-
-The public website remains a standard Next.js app and can still be built with:
+## Build and serve
 
 ```bash
 npm run build
 npm run start
 ```
+
+## Backend routes
+
+- http://localhost:4000/api/health
+- http://localhost:4000/api/site
 

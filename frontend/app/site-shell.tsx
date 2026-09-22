@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { defaultSiteConfig, getSiteConfig } from "@/lib/site-api";
 
 const navItems = [
   { href: "/", label: "Home" },
@@ -38,6 +39,7 @@ const socialLinks = [
 
 export function SiteShell({ children }: { children: React.ReactNode }) {
   const [isOpen, setIsOpen] = useState(false);
+  const [siteConfig, setSiteConfig] = useState(defaultSiteConfig);
 
   useEffect(() => {
     document.body.style.overflow = isOpen ? "hidden" : "";
@@ -47,6 +49,26 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
     };
   }, [isOpen]);
 
+  useEffect(() => {
+    let isMounted = true;
+
+    getSiteConfig()
+      .then((data) => {
+        if (isMounted) {
+          setSiteConfig(data);
+        }
+      })
+      .catch(() => {
+        if (isMounted) {
+          setSiteConfig(defaultSiteConfig);
+        }
+      });
+
+    return () => {
+      isMounted = false;
+    };
+  }, []);
+
   return (
     <div className="site-shell min-h-screen text-stone-900">
       <div className="mx-auto w-full">
@@ -55,9 +77,9 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
             <Link href="/" className="flex shrink-0 items-center gap-3" onClick={() => setIsOpen(false)}>
               <Image src="/church-logo-white.png" alt="Eternity Gospel Church logo" width={56} height={56} className="brand-logo" />
               <div>
-                <div className="text-sm font-semibold tracking-[0.02em]">Eternity Gospel</div>
+                <div className="text-sm font-semibold tracking-[0.02em]">{siteConfig.name}</div>
                 <div className="text-[10px] uppercase tracking-[0.18em] text-white/70">
-                  Church &amp; Ministries
+                  {siteConfig.tagline}
                 </div>
               </div>
             </Link>
@@ -186,9 +208,9 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
             <div className="flex items-center gap-3">
               <Image src="/church-logo-white.png" alt="Eternity Gospel Church logo" width={56} height={56} className="brand-logo brand-logo-footer" />
               <div>
-                <div className="text-sm font-semibold">Eternity Gospel</div>
+                <div className="text-sm font-semibold">{siteConfig.name}</div>
                 <div className="text-[10px] uppercase tracking-[0.18em] text-white/70">
-                  Church &amp; Ministries
+                  {siteConfig.tagline}
                 </div>
               </div>
             </div>
@@ -200,7 +222,7 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
               <Link href="/giving">Give</Link>
             </div>
 
-            <div className="text-sm italic text-white/90">Gather. Grow. Go.</div>
+            <div className="text-sm italic text-white/90">{siteConfig.tagline}</div>
             </div>
           </div>
         </footer>
