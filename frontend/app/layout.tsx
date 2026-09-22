@@ -16,6 +16,11 @@ export const metadata: Metadata = {
   title: "Eternity Gospel Church and Ministries | Karen",
   description:
     "Public website for Eternity Gospel Church and Ministries in Karen, Nairobi.",
+  icons: {
+    icon: "/church-logo-white.png",
+    shortcut: "/church-logo-white.png",
+    apple: "/church-logo-white.png",
+  },
 };
 
 export default function RootLayout({
