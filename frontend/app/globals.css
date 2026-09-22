@@ -56,13 +56,13 @@ h4 {
 .hero-section {
   position: relative;
   background:
-    linear-gradient(110deg, rgba(22, 25, 20, 0.86), rgba(44, 32, 12, 0.6)),
+    linear-gradient(110deg, rgba(18, 20, 17, 0.84), rgba(58, 44, 19, 0.56)),
     url("/church-background.jpg");
   background-size: cover;
   background-position: center;
   border-radius: 2rem;
-  min-height: 560px;
-  padding: 3rem 4rem;
+  min-height: 500px;
+  padding: 2.5rem 2.5rem;
   color: #fff;
   overflow: hidden;
 }
@@ -70,10 +70,9 @@ h4 {
 .hero-section::after {
   content: "";
   position: absolute;
-  inset: -1px;
-  background-image: radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1px);
-  background-size: 30px 30px;
-  mask-image: linear-gradient(180deg, rgba(0,0,0,1), transparent 100%);
+  inset: auto 0 0 0;
+  height: 140px;
+  background: linear-gradient(180deg, transparent, rgba(9, 10, 10, 0.38));
   pointer-events: none;
 }
 
@@ -95,10 +94,10 @@ h4 {
   display: inline-flex;
   align-items: center;
   gap: 0.75rem;
-  font-size: 0.76rem;
+  font-size: 0.72rem;
   font-weight: 800;
   line-height: 1;
-  letter-spacing: 0.19em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--brand);
 }
@@ -233,10 +232,10 @@ h4 {
   position: relative;
   width: min(420px, 100%);
   aspect-ratio: 1 / 1;
-  border-radius: 50% 50% 50% 50%;
+  border-radius: 1.6rem;
   overflow: hidden;
-  border: 4px solid rgba(255,255,255,0.8);
-  box-shadow: 0 30px 80px rgba(0,0,0,0.45);
+  border: 1px solid rgba(255,255,255,0.25);
+  box-shadow: 0 30px 80px rgba(0,0,0,0.38);
 }
 
 .hero-image {
@@ -287,11 +286,12 @@ h4 {
 }
 
 .service-strip {
-  background: var(--soft);
+  background: rgba(255,255,255,0.56);
   color: var(--deep);
-  padding: 1rem 1.5rem;
-  margin-top: 1rem;
+  padding: 1rem 1.25rem;
+  margin-top: 0.75rem;
   border-radius: 1rem;
+  border: 1px solid var(--line);
 }
 
 .service-strip-content {
@@ -331,7 +331,7 @@ h4 {
 }
 
 .section-block {
-  margin-top: 4rem;
+  margin-top: 3rem;
 }
 
 .section-heading {
@@ -422,9 +422,10 @@ h4 {
 }
 
 .ministry-card {
-  padding: 1.8rem;
-  border-radius: 1.2rem;
-  background: rgba(255,255,255,0.82);
+  padding: 1.6rem;
+  border-radius: 1.1rem;
+  background: rgba(255,255,255,0.72);
+  box-shadow: 0 12px 28px rgba(18, 14, 12, 0.04);
 }
 
 .ministry-top {

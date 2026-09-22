@@ -78,7 +78,7 @@ export default function HomePage() {
         <div className="service-strip-content">
           <div>
             <span className="section-kicker dark">Sunday Gathering</span>
-            <div className="service-title">Worship · Prayer · Teaching</div>
+            <div className="service-title">Worship, Prayer, Teaching</div>
           </div>
           <div className="service-tags">
             <span>8:00 AM</span>
