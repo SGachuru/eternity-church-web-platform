@@ -34,7 +34,7 @@ export default function NewsPage() {
             </h1>
           </div>
           <Link href="/events" className="rounded-full bg-stone-900 px-5 py-3 text-sm font-semibold text-white transition hover:bg-[#b97036]">
-            View events ↗
+            View events 
           </Link>
         </div>
 
@@ -47,7 +47,7 @@ export default function NewsPage() {
               <p className="mt-4 text-stone-700">{post.summary}</p>
               <div className="mt-6">
                 <Link href="/contact" className="text-sm font-semibold text-stone-900 underline decoration-stone-400 underline-offset-4">
-                  Learn more →
+                  Learn more 
                 </Link>
               </div>
             </article>

@@ -18,7 +18,7 @@ export default function TermsPage() {
 
       <div className="mt-8 text-center">
         <Link href="/" className="inline-flex rounded-full bg-stone-900 px-6 py-3 text-sm font-semibold text-white">
-          Back home ↗
+          Back home 
         </Link>
       </div>
     </SiteShell>

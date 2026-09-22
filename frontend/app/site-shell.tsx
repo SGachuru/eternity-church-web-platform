@@ -54,7 +54,7 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
         <header className="sticky top-0 z-50 bg-stone-950/95 text-white shadow-lg shadow-stone-950/20 backdrop-blur-sm">
           <div className="relative mx-auto flex min-h-16 max-w-[1600px] items-center justify-between gap-5 px-5 py-3 sm:px-8 lg:px-10">
             <Link href="/" className="flex shrink-0 items-center gap-3" onClick={() => setIsOpen(false)}>
-              <Image src="/church-logo-white.png" alt="Eternity Gospel Church logo" width={76} height={76} priority className="brand-logo" />
+              <Image src="/church-logo-white.png" alt="Eternity Gospel Church logo" width={56} height={56} priority className="brand-logo" />
               <div>
                 <div className="text-sm font-semibold tracking-[0.02em]">{defaultSiteConfig.name}</div>
                 <div className="text-[10px] uppercase tracking-[0.18em] text-white/70">
@@ -71,7 +71,6 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
                   className="flex cursor-pointer items-center gap-1 whitespace-nowrap rounded-full px-3 py-2 text-sm font-medium text-white/75 transition hover:bg-white/10 hover:text-white"
                 >
                   About
-                  <span aria-hidden="true" className="text-[10px] transition group-open:rotate-180">⌄</span>
                 </button>
                 <div className="invisible absolute left-0 top-full z-10 min-w-48 rounded-xl border border-white/10 bg-stone-950 p-2 opacity-0 shadow-2xl transition-[opacity,visibility] duration-150 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
                   {aboutItems.map((item) => (
@@ -112,7 +111,6 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
                   <details className="group">
                     <summary className="flex cursor-pointer list-none items-center justify-between rounded-lg px-3 py-3 text-sm font-medium text-white/80 transition hover:bg-white/10 hover:text-white [&::-webkit-details-marker]:hidden">
                       <span>About</span>
-                      <span aria-hidden="true" className="transition group-open:rotate-180">⌄</span>
                     </summary>
                     <div className="ml-3 border-l border-white/10 pl-3">
                       {aboutItems.map((item) => (
@@ -135,7 +133,6 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
                       className="flex items-center justify-between rounded-lg px-3 py-3 text-sm font-medium text-white/80 transition hover:bg-white/10 hover:text-white"
                     >
                       <span>{item.label}</span>
-                      <span aria-hidden="true">↗</span>
                     </Link>
                   ))}
                 </nav>
@@ -177,7 +174,7 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
                     className="h-16 w-16 rounded-md bg-white object-contain"
                   />
                   <span className="text-sm font-semibold text-white/85 group-hover:text-white">
-                    Follow us on {social.label} ↗
+                    Follow us on {social.label}
                   </span>
                 </a>
               ))}
@@ -185,7 +182,7 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
 
             <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
             <div className="flex items-center gap-3">
-              <Image src="/church-logo-white.png" alt="Eternity Gospel Church logo" width={76} height={76} priority className="brand-logo brand-logo-footer" />
+              <Image src="/church-logo-white.png" alt="Eternity Gospel Church logo" width={56} height={56} priority className="brand-logo brand-logo-footer" />
               <div>
                 <div className="text-sm font-semibold">{defaultSiteConfig.name}</div>
                 <div className="text-[10px] uppercase tracking-[0.18em] text-white/70">

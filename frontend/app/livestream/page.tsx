@@ -12,7 +12,7 @@ export default function LivestreamPage() {
             </h1>
           </div>
           <a href="https://www.youtube.com/@eternitygospelchurchministries" target="_blank" rel="noreferrer" className="rounded-full bg-[#b97036] px-5 py-3 text-sm font-semibold text-white transition hover:bg-[#a9622d]">
-            Join our YouTube ↗
+            Join our YouTube 
           </a>
         </div>
 
@@ -20,7 +20,7 @@ export default function LivestreamPage() {
           <div className="rounded-[2rem] border border-stone-200 bg-stone-950 p-2 shadow-xl">
             <div className="aspect-video overflow-hidden rounded-[1.5rem] bg-stone-900">
               <div className="flex h-full flex-col items-center justify-center gap-4 text-center">
-                <span className="inline-flex h-16 w-16 items-center justify-center rounded-full border border-white/50 text-3xl text-white">▶</span>
+                <span className="inline-flex h-16 w-16 items-center justify-center rounded-full border border-white/50 text-3xl text-white">Play</span>
                 <div>
                   <div className="text-xs font-semibold uppercase tracking-[0.2em] text-[#f0bd78]">Sunday Service</div>
                   <div className="mt-2 text-3xl font-semibold text-white">8:00 AM – 1:00 PM</div>

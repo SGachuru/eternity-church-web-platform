@@ -27,7 +27,7 @@ export default function VisitPage() {
 
       <div className="mt-16 text-center">
         <Link href="/contact" className="inline-flex rounded-full bg-stone-900 px-6 py-3 text-sm font-semibold text-white">
-          Contact the church ↗
+          Contact the church 
         </Link>
       </div>
     </SiteShell>

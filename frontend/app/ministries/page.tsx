@@ -38,7 +38,7 @@ export default function MinistriesPage() {
         </p>
         <div className="mt-6">
           <Link href="/contact" className="inline-flex rounded-full bg-white px-5 py-3 text-sm font-semibold text-stone-900">
-            Connect with us ↗
+            Connect with us 
           </Link>
         </div>
       </section>

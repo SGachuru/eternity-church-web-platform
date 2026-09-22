@@ -6,22 +6,18 @@ const ministryCards = [
   {
     title: "Prayer & Worship",
     text: "Gather in Spirit-filled worship and prayer events for the whole church family.",
-    icon: "✦",
   },
   {
     title: "Children & Families",
     text: "Create gospel-centered moments for every generation.",
-    icon: "✎",
   },
   {
     title: "Discipleship",
     text: "Grow through study, teaching, pastoral care, and community.",
-    icon: "✤",
   },
   {
     title: "Outreach",
     text: "Serve our neighborhoods and share the love of Christ.",
-    icon: "✝",
   },
 ];
 
@@ -37,7 +33,7 @@ export default function HomePage() {
       <section className="hero-section">
         <div className="hero-grid">
           <div className="hero-copy">
-            <div className="section-kicker"><span></span>Welcome to Eternity Gospel Church</div>
+            <div className="section-kicker">Welcome to Eternity Gospel Church</div>
             <h1 className="hero-title">
               Family on <span className="hero-italic">Mission</span>
             </h1>
@@ -73,7 +69,6 @@ export default function HomePage() {
                 <span className="host-label">Hosts</span>
                 <span className="host-name">Bishop Charles &amp; Rev Miriam</span>
               </div>
-              <span className="host-icon">✦</span>
             </div>
           </div>
         </div>
@@ -82,7 +77,7 @@ export default function HomePage() {
       <section className="service-strip">
         <div className="service-strip-content">
           <div>
-            <span className="section-kicker dark"><span></span>Sunday Gathering</span>
+            <span className="section-kicker dark">Sunday Gathering</span>
             <div className="service-title">Worship · Prayer · Teaching</div>
           </div>
           <div className="service-tags">
@@ -98,10 +93,10 @@ export default function HomePage() {
       <section className="section-block intro-block">
         <div className="section-heading">
           <div>
-            <span className="section-kicker"><span></span>Our Church</span>
+            <span className="section-kicker">Our Church</span>
             <h2 className="section-title">A living church for every generation.</h2>
           </div>
-          <Link href="/about" className="text-link">Read our story →</Link>
+          <Link href="/about" className="text-link">Read our story</Link>
         </div>
         <div className="intro-grid">
           <article className="intro-card highlight">
@@ -132,7 +127,7 @@ export default function HomePage() {
       <section className="section-block ministry-block">
         <div className="section-heading centered">
           <div>
-            <span className="section-kicker"><span></span>Ministries</span>
+            <span className="section-kicker">Ministries</span>
             <h2 className="section-title">Find your place to grow.</h2>
           </div>
         </div>
@@ -140,12 +135,11 @@ export default function HomePage() {
           {ministryCards.map((ministry, idx) => (
             <article key={ministry.title} className="ministry-card">
               <div className="ministry-top">
-                <span className="ministry-icon">{ministry.icon}</span>
                 <span className="ministry-index">0{idx + 1}</span>
               </div>
               <h3>{ministry.title}</h3>
               <p>{ministry.text}</p>
-              <Link href="/ministries" className="card-link">Explore →</Link>
+              <Link href="/ministries" className="card-link">Explore</Link>
             </article>
           ))}
         </div>
@@ -154,15 +148,15 @@ export default function HomePage() {
       <section className="section-block sermon-block">
         <div className="section-heading">
           <div>
-            <span className="section-kicker"><span></span>Latest message</span>
+            <span className="section-kicker">Latest message</span>
             <h2 className="section-title">Sermons &amp; teaching.</h2>
           </div>
-          <Link href="/sermons" className="text-link">All sermons →</Link>
+          <Link href="/sermons" className="text-link">All sermons</Link>
         </div>
         <div className="sermon-grid">
           <article className="sermon-feature">
             <div className="play-box">
-              <span className="play-button">▶</span>
+              <span className="play-button">Play</span>
             </div>
             <div className="sermon-copy">
               <span className="mini-label light">This week</span>
@@ -182,7 +176,6 @@ export default function HomePage() {
                 <span className="mini-label light">Prayer</span>
                 <h4>Prayer in the House</h4>
               </div>
-              <span className="sermon-arrow">↗</span>
             </div>
             <div className="sermon-row">
               <span className="sermon-date">Sep 28</span>
@@ -190,7 +183,6 @@ export default function HomePage() {
                 <span className="mini-label light">Discipleship</span>
                 <h4>Rooted in Christ</h4>
               </div>
-              <span className="sermon-arrow">↗</span>
             </div>
             <div className="sermon-row">
               <span className="sermon-date">Oct 05</span>
@@ -198,7 +190,6 @@ export default function HomePage() {
                 <span className="mini-label light">Community</span>
                 <h4>Finding Family</h4>
               </div>
-              <span className="sermon-arrow">↗</span>
             </div>
           </aside>
         </div>
@@ -207,10 +198,10 @@ export default function HomePage() {
       <section className="section-block events-block">
         <div className="section-heading">
           <div>
-            <span className="section-kicker"><span></span>Events</span>
+            <span className="section-kicker">Events</span>
             <h2 className="section-title">Gather with us.</h2>
           </div>
-          <Link href="/events" className="text-link">All events →</Link>
+          <Link href="/events" className="text-link">All events</Link>
         </div>
         <div className="events-list">
           {eventRows.map((event) => (
@@ -223,7 +214,7 @@ export default function HomePage() {
                 <span className="mini-label">{event.note}</span>
                 <h3>{event.title}</h3>
               </div>
-              <Link href="/events" className="event-arrow">↗</Link>
+              <Link href="/events" className="event-arrow">View</Link>
             </article>
           ))}
         </div>
@@ -231,7 +222,7 @@ export default function HomePage() {
 
       <section className="section-block split-panel">
         <div className="split-content">
-          <span className="section-kicker"><span></span>Prayer &amp; Care</span>
+          <span className="section-kicker">Prayer &amp; Care</span>
           <h2 className="section-title">Request prayer.</h2>
           <p>
             Our church family prays with you for spiritual encouragement, healing,
@@ -245,19 +236,18 @@ export default function HomePage() {
         <div className="split-card">
           <div className="split-card-head">
             <span>Weekly Prayer</span>
-            <span className="live-dot"></span>
           </div>
           <ul className="split-list">
-            <li><span></span>Sunday Prayer</li>
-            <li><span></span>Midweek Prayer</li>
-            <li><span></span>Women &amp; Families</li>
+            <li>Sunday Prayer</li>
+            <li>Midweek Prayer</li>
+            <li>Women &amp; Families</li>
           </ul>
         </div>
       </section>
 
       <section className="section-block cta-band">
         <div className="cta-copy">
-          <span className="section-kicker"><span></span>Location</span>
+          <span className="section-kicker">Location</span>
           <h2 className="section-title">Find us in Karen.</h2>
           <p>
             Visit Eternity Gospel Church and Ministries in Nairobi and experience
@@ -274,13 +264,13 @@ export default function HomePage() {
           </div>
         </div>
         <div className="map-card">
-          <iframe title="Map" src="https://www.google.com/maps?q=Eternity+Gospel+Church+and+Ministries+Karen+Nairobi&z=16&output=embed" className="map-frame" loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
+          <iframe title="Map" src="https://www.google.com/mapsq=Eternity+Gospel+Church+and+Ministries+Karen+Nairobi&z=16&output=embed" className="map-frame" loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
         </div>
       </section>
 
       <section className="section-block newsletter">
         <div className="newsletter-copy">
-          <span className="section-kicker"><span></span>Announcements</span>
+          <span className="section-kicker">Announcements</span>
           <h2 className="section-title">Stay encouraged.</h2>
         </div>
         <form className="newsletter-form">

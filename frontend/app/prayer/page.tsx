@@ -29,7 +29,7 @@ export default function PrayerPage() {
 
       <div className="mt-16 text-center">
         <Link href="/contact" className="inline-flex rounded-full bg-stone-900 px-6 py-3 text-sm font-semibold text-white">
-          Submit a prayer request ↗
+          Submit a prayer request 
         </Link>
       </div>
     </SiteShell>

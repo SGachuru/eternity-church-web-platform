@@ -34,7 +34,7 @@ export default function LeadershipPage() {
             </h1>
           </div>
           <Link href="/contact" className="rounded-full bg-stone-900 px-5 py-3 text-sm font-semibold text-white transition hover:bg-[#b97036]">
-            Contact leadership ↗
+            Contact leadership 
           </Link>
         </div>
 

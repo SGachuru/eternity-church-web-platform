@@ -34,7 +34,7 @@ export default function ContactPage() {
         <div className="soft-card overflow-hidden rounded-[1.5rem] p-0">
           <iframe
             title="Eternity Gospel Church map"
-            src="https://www.google.com/maps?q=Eternity+Gospel+Church+and+Ministries+Karen+Nairobi&z=16&output=embed"
+            src="https://www.google.com/mapsq=Eternity+Gospel+Church+and+Ministries+Karen+Nairobi&z=16&output=embed"
             className="h-[310px] w-full border-0"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
@@ -44,7 +44,7 @@ export default function ContactPage() {
 
       <div className="mt-16 text-center">
         <Link href="/visit" className="inline-flex rounded-full bg-stone-900 px-6 py-3 text-sm font-semibold text-white">
-          Plan your visit ↗
+          Plan your visit 
         </Link>
       </div>
     </SiteShell>

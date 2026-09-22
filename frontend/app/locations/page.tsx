@@ -64,7 +64,7 @@ export default function LocationsPage() {
                 <div className="mt-2 text-lg font-semibold text-white">info@eternitygospelchurch.org</div>
               </div>
               <Link href="/visit" className="inline-flex w-fit rounded-full bg-[#b97036] px-5 py-3 text-sm font-semibold text-white transition hover:bg-[#a9622d]">
-                Plan your visit ↗
+                Plan your visit 
               </Link>
             </div>
           </div>

@@ -79,7 +79,7 @@ export default function AboutPage() {
 
       <div className="mt-16 text-center">
         <Link href="/visit" className="inline-flex rounded-full bg-stone-900 px-6 py-3 text-sm font-semibold text-white">
-          Plan your visit ↗
+          Plan your visit 
         </Link>
       </div>
     </SiteShell>

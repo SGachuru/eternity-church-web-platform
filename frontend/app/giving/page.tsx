@@ -33,10 +33,10 @@ export default function GivingPage() {
         </p>
         <div className="mt-6 flex flex-wrap gap-3">
           <Link href="/contact" className="inline-flex rounded-full bg-white px-5 py-3 text-sm font-semibold text-stone-900">
-            Enquire about giving ↗
+            Enquire about giving 
           </Link>
           <Link href="/visit" className="inline-flex rounded-full border border-white/20 px-5 py-3 text-sm font-semibold text-white">
-            Plan a visit ↗
+            Plan a visit 
           </Link>
         </div>
       </section>
