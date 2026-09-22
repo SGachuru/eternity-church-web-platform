@@ -54,7 +54,7 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
         <header className="sticky top-0 z-50 bg-stone-950/95 text-white shadow-lg shadow-stone-950/20 backdrop-blur-sm">
           <div className="relative mx-auto flex min-h-16 max-w-[1600px] items-center justify-between gap-5 px-5 py-3 sm:px-8 lg:px-10">
             <Link href="/" className="flex shrink-0 items-center gap-3" onClick={() => setIsOpen(false)}>
-              <Image src="/church-logo-white.png" alt="Eternity Gospel Church logo" width={56} height={56} priority className="brand-logo" />
+              <Image src="/church-logo-white.png" alt="Eternity Gospel Church logo" width={76} height={76} priority className="brand-logo" />
               <div>
                 <div className="text-sm font-semibold tracking-[0.02em]">{defaultSiteConfig.name}</div>
                 <div className="text-[10px] uppercase tracking-[0.18em] text-white/70">
@@ -185,7 +185,7 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
 
             <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
             <div className="flex items-center gap-3">
-              <Image src="/church-logo-white.png" alt="Eternity Gospel Church logo" width={56} height={56} priority className="brand-logo brand-logo-footer" />
+              <Image src="/church-logo-white.png" alt="Eternity Gospel Church logo" width={76} height={76} priority className="brand-logo brand-logo-footer" />
               <div>
                 <div className="text-sm font-semibold">{defaultSiteConfig.name}</div>
                 <div className="text-[10px] uppercase tracking-[0.18em] text-white/70">
